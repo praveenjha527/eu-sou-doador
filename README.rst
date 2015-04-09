@@ -1,59 +1,46 @@
-Eu Sou Doador
-==============
+I am Donor
+Service to help people who need blood donation to find nearest compatible donors.
 
-Serviço para ajudar pessoas que precisam de doação de sangue a encontrar doadores compatíveis mais próximos.
+Requirements development environment
 
-Requisitos do ambiente de desenvolvimento
------------------------------------------
+Python 2.7
+postgres 9.1
+GEOS
+PROJ.4
+GDAL
+PostGIS
+RabbitMQ
+You can help with the installation of GEOS, PROJ, GDAL and in PostGIS: https://docs.djangoproject.com/en/1.6/ref/contrib/gis/install/geolibs/
 
-* Python 2.7
-* Postgres 9.1
-* GEOS
-* PROJ.4
-* GDAL
-* PostGIS
-* RabbitMQ
+Python environmental requirements
 
-Você pode obter ajuda sobre a instalação do GEOS, PROJ, GDAL e PostGIS em: https://docs.djangoproject.com/en/1.6/ref/contrib/gis/install/geolibs/
+django
+bpython
+django-braces
+django-model-utils
+logutils
+south
+psycopg2
+celery
+django-autoslug
+django-widget-tweaks
+django-contact-form
+coverage
+django-discover-runner
+django-debug-toolbar
+sphinx
+Installation of dependencies
 
-Requisitos do ambiente Python
------------------------------
+$ Pip install -r requirements.txt
+Running the application locally
 
-* django
-* bpython
-* django-braces
-* django-model-utils
-* logutils
-* south
-* psycopg2
-* celery
-* django-autoslug
-* django-widget-tweaks
-* django-contact-form
-* coverage
-* django-discover-runner
-* django-debug-toolbar
-* sphinx
+$ Python manage.py runserver
+If you are using Vagrant.
 
-Instalação das dependências
----------------------------
+$ Python manage.py runserver [::]: 8000
+or simply run local.sh file using the following command:
 
-    $ pip install -r requirements.txt
+$ Sh local.sh
+The Site
 
-Rodando a aplicação localmente
-------------------------------
-
-    $ python manage.py runserver
-
-Se você está usando Vagrant.
-
-    $ python manage.py runserver [::]:8000
-
-ou simplesmente executar o arquivo local.sh usando o seguinte comando:
-
-    $ sh local.sh
-
-O Site
---------
-
-O exemplo mais atual e funcional está em http://eusoudoador.com.br
+The most recent and working example is http://eusoudoador.com.br
